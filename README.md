@@ -24,16 +24,19 @@
     
 只有这样还不够，你需要新建一个绑定的事件对象：
 
-    var obj=binding(modelname, a ，fun ); 
+    var obj=binding(modelname, obj ，fun ); 
 
 其中modelname是必选参数，是你想要绑定model的值，可以是字符串的形式，也可以是含有很多model的数组
-a是一个可选参数，可以是一个定义初始化事件的对象，这个对象有两个可选的属性值：
+
+obj是一个可选参数，可以是一个定义初始化事件的对象，这个对象有两个可选的属性值：
 
     {
     watch: 'value',     // value是你要绑定的controller的属性值，默认为value
     change: 'className' // className是你要修改的model的属性值，默认为textContent
     }
-b是一个可选参数，可以是一个回调函数。
+fun是一个可选参数，可以是一个回调函数。
+
+如果你想输入modelname和fun参数，那么无需给obj参数空出位置，binding会自动认为第二个参数是回调函数
 
 下面是新增事件对象的一个实例：
 
@@ -54,3 +57,9 @@ b是一个可选参数，可以是一个回调函数。
     obj.models;                              // 查看obj事件的所有model，返回一个字符串的数组
     
 binding.js不依赖于任何其他第三方库，但是不支持IE10及以下旧式浏览器。
+
+到这里如果你以为binding.js只是可以进行初步的表单验证，那可就大错特错了。
+
+试想一下，如果你的论坛网页引入了binding.js，你甚至可以做到让用户发表评论时，网页的背景随着用户的心情而发生变化！！
+
+只要你有足够有趣的idea，binding.js能给你带来近乎一切的交互体验。
