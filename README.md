@@ -33,7 +33,7 @@ a是一个可选参数，可以是一个定义初始化事件的对象，这个�
     watch: 'value',     // value是你要绑定的controller的属性值，默认为value
     change: 'className' // className是你要修改的model的属性值，默认为textContent
     }
-b是一个可选参数，可以是一个回调函数。
+fun是一个可选参数，可以是一个回调函数。
 
 下面是新增事件对象的一个实例：
 
