@@ -87,7 +87,7 @@
     <script src=".idea/binding.min.js"></script>
     <script>
         var demoArr = ['number','text','area','select','range','radio','checkbox','date','time','textMore','colMore','more'];
-        var demo = binding(demoArr,function (input) {
+        var demo = binding(demoArr,{defaultValue:'default'},function (input) {
             console.log(input.value);
         })
     </script>

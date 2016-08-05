@@ -52,7 +52,9 @@
             function handleChange() {
                 for (var i = 0; i < pur.length; i++) {
                     var value = this[watch].toString().trim();
+
                     if (value.length === 0) {
+                        pur[i][change]=defaultValue;
                     } else if (!defaultValue) {
                         pur[i][change] = value;
                     } else {
