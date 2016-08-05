@@ -2,9 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Binding Demo</title>
+    <link rel="stylesheet" href="demo-style.css">
 </head>
 <body>
-
+    <h1>binding.js是一个小巧却功能强大js库</h1>
+    <h3>下面是一些最基础的使用样例，当然你可以用binding.js做更多有趣的事</h3>
+    <div class="wrapper">
+        <div class="play">
+             <p data-model="number">number</p>
+             <input type="number" data-controller="number" />
+        </div>
+        <div class="play">
+            <p data-model="text">text</p>
+            <input type="text" data-controller="text">
+        </div>
+        <div class="play">
+            <p data-model="area">area</p>
+            <textarea data-controller="area"></textarea>
+        </div>
+        <div class="play">
+            <p data-model="select">select</p>
+            <select name="changed" data-controller="select">
+                <option value="check1">111111</option>
+                <option value="check2">222222</option>
+                <option value="check3">333333</option>
+                <option value="check4">444444</option>
+            </select>
+        </div>
+        <div class="play">
+            <p data-model="range">range</p>
+            <input type="range" data-controller="range">
+        </div>
+        <div class="play">
+            <p data-model="radio">radio</p>
+            <input type="radio" data-controller="radio" value="1" name="radio">
+            <input type="radio" data-controller="radio" value="2" name="radio">
+            <input type="radio" data-controller="radio" value="3" name="radio">
+            <input type="radio" data-controller="radio" value="4" name="radio">
+        </div>
+        <div class="play">
+            <p data-model="checkbox">checkbox</p>
+            <input type="checkbox" data-controller="checkbox" value="true" name="checkbox">
+        </div>
+        <div class="play">
+            <p data-model="date">date</p>
+            <input type="date" data-controller="date">
+        </div>
+        <div class="play">
+            <p data-model="time">time</p>
+            <input type="time" data-controller="time">
+        </div>
+        <div class="play playLarge">
+            <p>你也可以让一个controller对应多个model</p>
+            <p data-model="textMore">text</p>
+            <p data-model="textMore">text</p>
+            <p data-model="textMore">text</p>
+            <p data-model="textMore">text</p>
+            <input type="text" data-controller="textMore">
+        </div>
+        <div class="play playLarge">
+            <p>或者你也可以让一个model对应多个controller</p>
+            <p>这样做的话显示结果以最后一次操作的controller为准</p>
+            <p data-model="colMore">text</p>
+            <input type="text" data-controller="colMore">
+            <input type="text" data-controller="colMore">
+            <input type="text" data-controller="colMore">
+        </div>
+        <div class="play playLarge">
+            <p>当然你也可以让多个controller对应多个model</p>
+            <p>binding.js就是这么的灵活！！</p>
+            <p data-model="more">text</p>
+            <p data-model="more">text</p>
+            <input type="text" data-controller="more">
+            <input type="text" data-controller="more">
+        </div>
+    </div>
+    <footer>
+        <p>
+            design by 浮生<br>
+            转载请注明出处：https://github.com/a982503660/binding.js
+        </p>
+    </footer>
+    <script src=".idea/binding.min.js"></script>
+    <script>
+        var demoArr = ['number','text','area','select','range','radio','checkbox','date','time','textMore','colMore','more'];
+        var demo = binding(demoArr,function (input) {
+            console.log(input.value);
+        })
+    </script>
 </body>
 </html>
