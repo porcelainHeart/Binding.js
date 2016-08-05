@@ -1,5 +1,6 @@
 /**
  * Created by 浮生 on 2016/8/5.
+ *
  */
 (function () {
     window.binding = function(col, b, c) {
