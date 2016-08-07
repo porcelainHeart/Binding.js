@@ -28,11 +28,12 @@
 
 其中modelname是必选参数，是你想要绑定model的值，可以是字符串的形式，也可以是含有很多model的数组
 
-obj是一个可选参数，可以是一个定义初始化事件的对象，这个对象有两个可选的属性值：
+obj是一个可选参数，可以是一个定义初始化事件的对象，这个对象有三个可选的属性值：
 
     {
     watch: 'value',     // value是你要绑定的controller的属性值，默认为value
     change: 'className' // className是你要修改的model的属性值，默认为textContent
+    defaultValue: 'default' // default是你要修改的默认值，这个默认值的优先级小于行内样式，默认为false
     }
 fun是一个可选参数，可以是一个回调函数。
 
