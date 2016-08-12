@@ -1,6 +1,6 @@
 ## binding.js
 
-####转载请注明出处：https://github.com/a982503660/binding.js
+####转载请注明出处：https://github.com/porcelainHeart/binding.js
 
 压缩后的binding.min.js的大小只有1.2kb！！！ 就可以让你实现完善的数据绑定功能！
 
