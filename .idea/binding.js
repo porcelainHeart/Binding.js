@@ -58,7 +58,7 @@
                 }
             }
 
-            // 定义监听器回调函数，  改变显示的值
+            // 定义监听器回调函数，改变显示的值
             function handleChange() {
                 for (var i = 0; i < pur.length; i++) {
                     var value = this[watch].toString().trim();
