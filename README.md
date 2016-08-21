@@ -1,4 +1,4 @@
-## binding.js
+## Binding.js
 
 ####转载请注明出处：https://github.com/porcelainHeart/binding.js
 
