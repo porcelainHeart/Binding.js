@@ -1,8 +1,8 @@
-## binding.js
+## Binding.js
 
-####转载请注明出处：https://github.com/a982503660/binding.js
+####转载请注明出处：https://github.com/porcelainHeart/binding.js
 
-压缩后的binding.min.js的大小只有1.2kb！！！ 就可以让你实现完善的数据绑定功能！
+压缩后的binding.min.js的大小只有1.2kb！！！  就可以让你实现完善的数据绑定功能！
 
 下面让我们来看看binding是如何使用的
 
@@ -57,7 +57,7 @@ fun是一个可选参数，可以是一个回调函数。
     obj.controllers;                         // 查看obj事件的所有controller，返回一个字符串的数组
     obj.models;                              // 查看obj事件的所有model，返回一个字符串的数组
     
-binding.js不依赖于任何其他第三方库，但是不支持IE10及以下旧式浏览器。
+binding.js不依赖于任何其他第三方库，但是不支持IE9以下旧式浏览器。
 
 到这里如果你以为binding.js只是可以进行初步的表单验证，那可就大错特错了。
 
