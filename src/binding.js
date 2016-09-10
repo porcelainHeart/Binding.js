@@ -14,7 +14,7 @@
         return Array.prototype.slice.call(col, 0).map(function(a) {
 
             // 参数b初始化
-            var watch         = (typeof(b) === 'object' && b.watch)         ? b.watch       : 'value',
+            var watched         = (typeof(b) === 'object' && b.watched)         ? b.watched       : 'value',
                 change        = (typeof(b) === 'object' && b.change)        ? b.change      : 'textContent',
                 defaultValue  = (typeof(b) === 'object' && b.defaultValue)  ? b.defaultValue: false,
                 callback      = (typeof(b) === 'function')                  ? b             : c,
@@ -61,7 +61,8 @@
             // 定义监听器回调函数，改变显示的值
             function handleChange() {
                 for (var i = 0; i < pur.length; i++) {
-                    var value = this[watch].toString().trim();
+
+                    var value = this[watched].toString().trim();
 
                     if (value.length === 0) {
                         pur[i][change]=defaultValue;

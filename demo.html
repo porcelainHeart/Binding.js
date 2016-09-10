@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Binding Demo</title>
     <link rel="stylesheet" href="demo-style.css">
+    <script src="src/binding.js"></script>
 </head>
 <body>
     <h1>Binding.js是一个小巧却功能强大js库</h1>
@@ -86,10 +87,13 @@
     </footer>
     <script src="src/binding.min.js"></script>
     <script>
-        var demoArr = ['number','text','area','select','range','radio','checkbox','date','time','textMore','colMore','more'];
-        var demo = binding(demoArr,{defaultValue:'default'},function (input) {
-            console.log(input.value);
-        })
+        window.onload=function () {
+            var demoArr = ['number','text','area','select','range','radio','checkbox','date','time','textMore','colMore','more'];
+            var demo = binding(demoArr,{defaultValue:'default'},function (input) {
+                console.log(input.value);
+            })
+        }
+
     </script>
 </body>
 </html>
