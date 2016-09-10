@@ -1,4 +1,4 @@
-## Binding.js
+## Binding.js  Version：1.1.0
 
 ####转载请注明出处：https://github.com/porcelainHeart/Binding.js
 
