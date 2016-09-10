@@ -1,10 +1,10 @@
 ## Binding.js
 
-####转载请注明出处：https://github.com/porcelainHeart/binding.js
+####转载请注明出处：https://github.com/porcelainHeart/Binding.js
 
 压缩后的binding.min.js的大小只有1.2kb！！！  就可以让你实现完善的数据绑定功能！
 
-下面让我们来看看binding是如何使用的
+下面让我们来看看Binding是如何使用的：
 
 首先你需要在你的html文档中创建一个表单控件，然后给它添加一个data-controller属性，
 
@@ -37,7 +37,7 @@ obj是一个可选参数，可以是一个定义初始化事件的对象，这�
     }
 fun是一个可选参数，可以是一个回调函数。
 
-如果你想输入modelname和fun参数，那么无需给obj参数空出位置，binding会自动认为第二个参数是回调函数
+如果你想输入modelname和fun参数，那么无需给obj参数空出位置，binding会自动认为第二个参数是回调函数。
 
 下面是新增事件对象的一个实例：
 
@@ -57,10 +57,12 @@ fun是一个可选参数，可以是一个回调函数。
     obj.controllers;                         // 查看obj事件的所有controller，返回一个字符串的数组
     obj.models;                              // 查看obj事件的所有model，返回一个字符串的数组
     
-binding.js不依赖于任何其他第三方库，但是不支持IE9以下旧式浏览器。
+Binding.js不依赖于任何其他第三方库，但是不支持IE9以下旧式浏览器。
 
-到这里如果你以为binding.js只是可以进行初步的表单验证，那可就大错特错了。
+到这里如果你以为Binding.js只是可以进行初步的表单验证，那可就大错特错了。
 
-试想一下，如果你的论坛网页引入了binding.js，你甚至可以做到让用户发表评论时，网页的背景随着用户的心情而发生变化！！
+试想一下，如果你的论坛网页引入了Binding.js，你甚至可以做到让用户发表评论时，网页的背景随着用户的心情而发生变化！！
 
-只要你有足够有趣的idea，binding.js能给你带来近乎一切的交互体验。
+只要你有足够有趣的idea，Binding.js能给你带来近乎一切的交互体验。
+
+Binding.js主要实现的是Model层的工作，你可以结合我的另一个库ProduceDOM来使用，组合成完整的MVC架构。
