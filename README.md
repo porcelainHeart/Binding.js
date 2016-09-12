@@ -20,7 +20,7 @@
 
 当data-model属性的值与data-controller的值相同时，这两个数据就被绑定在一起。
 
-    <p data-model="num">number</p>    // 这样就绑定了上面数字输入框 并且设置默认显示为number
+    <p data-model="num">number</p>    // 这样就绑定了上面数字输入框，并且设置默认显示为number
     
 只有这样还不够，你需要新建一个绑定的事件对象：
 
