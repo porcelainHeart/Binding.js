@@ -26,7 +26,7 @@
 
     var obj=binding(modelname, obj ，fun ); 
 
-其中modelname是必选参数，是你想要绑定model的值，可以是字符串的形式，也可以是含有很多model的数组
+其中modelname是必选参数，是你想要绑定model的值，可以是字符串的形式，也可以是含有很多model的数组。
 
 obj是一个可选参数，可以是一个定义初始化事件的对象，这个对象有三个可选的属性值：
 
