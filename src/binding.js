@@ -14,7 +14,7 @@
         return Array.prototype.slice.call(col, 0).map(function(a) {
 
             // 参数b初始化
-            var watched         = (typeof(b) === 'object' && b.watched)         ? b.watched       : 'value',
+            var watched       = (typeof(b) === 'object' && b.watched)       ? b.watched     : 'value',
                 change        = (typeof(b) === 'object' && b.change)        ? b.change      : 'textContent',
                 defaultValue  = (typeof(b) === 'object' && b.defaultValue)  ? b.defaultValue: false,
                 callback      = (typeof(b) === 'function')                  ? b             : c,
